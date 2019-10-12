@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*:focus {
+    outline: 0;
+}
+
+a, button, input[type='submit'] {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+input {
+    border: 0;
+}
+
+input[type='text']:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input[type='text']:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input[type='text']:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input[type='text']:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea {
+    resize: none;
+}
+
+ul {
+    list-style: none;
+}

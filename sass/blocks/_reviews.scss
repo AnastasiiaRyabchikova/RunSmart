@@ -1,0 +1,42 @@
+.reviews {
+    padding: 40px 0 70px 0;
+    &__title {
+        margin-bottom: 20px;
+    }
+}
+
+.review {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    &:not(:last-child) {
+        border-bottom: 1px solid #CCC;
+    }
+    &__content {
+        padding-left: 60px;
+    }
+    &__image {
+        border-radius: 50%;
+    }
+    &__author-name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__author-feature {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 500;
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+}

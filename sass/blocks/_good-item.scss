@@ -1,0 +1,108 @@
+.good-item {
+    width: 300px;
+    border: 2px solid #e8e8e8;
+    background-color: #ffffff;
+    overflow: hidden;
+    &__body {
+        display: flex;
+        width: 200%;
+        transition: all 0.5s ease;
+        &_active {
+            transform: translateX(-50%);
+        }
+    }
+    &__content {
+        padding: 20px;
+        width: 50%;
+    }
+    &__info {
+        padding: 20px;
+        width: 50%;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__more,
+    &__back {
+        display: block;
+        text-align: center;
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__footer {
+        border-top: 1px solid #e8e8e8;
+        padding: 20px 20px 27px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__old-price {
+        display: block;
+        margin-bottom: 7px;
+        color: #555555;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: line-through;
+    }
+    &__new-price {
+        display: block;
+        color: #050505;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__btn {
+        width: 131px;
+        height: 40px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-list {
+            color: #555555;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+        &-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 14px;
+            &::before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                top: 5px;
+                left: 0px;
+                background-color: $main-color;
+
+            }
+        }
+    }
+
+
+}
