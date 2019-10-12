@@ -1,0 +1,137 @@
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .good-item {
+        width: calc(50% - 5px);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    .advantages-item {
+        width: calc(50% - 20px);
+        margin: 0 10px 23px;
+    }
+
+    .header__official {
+        display: none;
+    }
+    .promo {
+        height: auto;
+        &__icons {
+            width: 100%;
+        }
+    }
+
+    .consultation {
+        height: auto;
+        padding: 40px 0;
+
+        &__title {
+            margin-bottom: 60px;
+        }
+        
+    }
+
+    .tab-titles {
+        margin-bottom: 20px;
+    }
+
+    .review {
+        &__image {
+            flex-basis: 100px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        } 
+        &__content{
+            padding-left: 15px;
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+    .header {
+        flex-direction: column;
+        &__contacts {
+            align-self: flex-end;
+        }
+        &__logo {
+            align-self: flex-start;
+            margin-bottom: 10px;
+        }
+    }
+    .promo {
+        
+        padding: 21px 0 40px;
+        &__wrp {
+            margin-top: 30px;
+            align-items: center;
+        }
+        &__subheader {
+            margin-bottom: 40px;
+        }
+    }
+    
+
+    .advantages-item {
+        width: calc(100% - 20px);
+        margin: 0 10px 23px;
+    }
+
+    .review {
+        &__image {
+            display: none;
+        } 
+        &__content {
+           width: 100%;
+        }
+    }
+
+    .consultation {
+        height: auto;
+        &__title {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+    }
+    .form {
+        max-width: none;
+    }
+    .catalog{
+        padding: 20px 0;
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .reviews {
+        padding: 30px 0;
+    }
+
+    .review {
+        padding: 10px 0;
+    }
+}

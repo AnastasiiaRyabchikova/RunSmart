@@ -13,10 +13,13 @@
         border-bottom: 1px solid #CCC;
     }
     &__content {
-        padding-left: 60px;
+        padding-left: 6%;
     }
     &__image {
         border-radius: 50%;
+        img {
+            display: block;
+        }
     }
     &__author-name {
         color: #0d0d0d;
@@ -32,7 +35,7 @@
     }
     &__text {
         color: #0d0d0d;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         p:not(:last-child) {
             margin-bottom: 20px;

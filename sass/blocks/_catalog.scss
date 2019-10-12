@@ -1,7 +1,7 @@
 .catalog {
     padding: 40px 0;
     &__title {
-        margin-bottom: 69px;
+        margin-bottom: 60px;
     }
 
 }
@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .tab-title {
     min-width: 220px;
-    margin: 0 5px;
+    margin: 5px;
     height: 50px;
     border: 2px solid #d0d0d0;
     text-align: center;
@@ -43,7 +44,7 @@
     &_active {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     &__good-item {
         margin-bottom: 20px;
