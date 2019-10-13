@@ -3,6 +3,9 @@
     flex-direction: column;
     max-width: 300px;
     width: 100%;
+    &_width-100 {
+        max-width: none;
+    }
     &__input-text {
         margin-bottom: 15px;
         &:nth-child(3) {

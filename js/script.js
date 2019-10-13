@@ -24,5 +24,24 @@ $(document).ready(function () {
       $(this).closest('.good-item__body').toggleClass('good-item__body_active');
     });
 
+    $("[data-modal]").on('click', function(){
+      var modalID = "#" + $(this).attr("data-modal");
+      $(".overlay, " + modalID).fadeIn();
+    });
+
+    $('[data-modal="custom-order"]').on('click', function(){
+      var title = $(this).closest('.good-item').find('.good-item__title').text(),
+          modalID = "#" + $(this).attr("data-modal");
+
+      $(modalID).find('.modal__descr').text(title);
+
+    });
+
+    $('[data-close]').on('click', function(){
+      $(this).closest('.modal').fadeOut();
+      $('.overlay').fadeOut();
+    })
+
+
     
 });

@@ -1,0 +1,42 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: none;
+    padding: 40px;
+    width: 380px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 40px;
+        line-height: 21px;
+        color: $main-color;
+    }
+}
