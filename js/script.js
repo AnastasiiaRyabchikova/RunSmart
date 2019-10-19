@@ -40,8 +40,45 @@ $(document).ready(function () {
     $('[data-close]').on('click', function(){
       $(this).closest('.modal').fadeOut();
       $('.overlay').fadeOut();
-    })
+    });
 
+    //$('form').each(function(item){
+    //  console.log(item);
+    //  $(item).validate();
+    //});
+
+    function formValidation(elem){
+      $(elem).validate({
+        rules:{
+          name: {
+            required: true,
+            minlength: 2
+          },
+          phone: "required",
+          email: {
+            required: true,
+            email: true
+          },
+        },
+        messages: {
+          name: {
+            required: "Пожалуйста, введите свое имя",
+            minlength: jQuery.validator.format("Введите не менее {0} символов!"),
+          },
+          phone: "Пожалуйста, введите свой номер телефоана",
+          email: {
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введен адрес почты"
+          },
+        }
+      });
+    }
+
+    formValidation('#form-consultation');
+    formValidation('#form-consultation-popap');
+    formValidation('#form-buy');
+
+    $('[name="phone"]').mask("+7(999)99-99-999");
 
     
 });

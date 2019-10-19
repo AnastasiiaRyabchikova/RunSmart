@@ -16,4 +16,26 @@
         font-weight: 500;
         margin-bottom: 36px;
     }
+    &__form {
+        margin-right: 10px;
+    }
+    &__wrp {
+        display: flex;
+    }
+}
+
+#messageBox {
+    max-width: 300px;
+    margin-bottom: 10px;
+    ul {
+        color: #c70101;
+    }
+    li{
+        background: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        &:not(:last-child) {
+                padding-bottom: 10px;
+            }
+    }
 }

@@ -91,12 +91,20 @@
                 Просто заполните форму заявки
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#" method="POST" class="form">
-                <input name="name" class="input-text form__input-text" required type="text" placeholder="Ваше имя">
-                <input name="phone" class="input-text form__input-text" required type="te" placeholder="Ваше телефон">
-                <input name="email" class="input-text form__input-text" required type="email" placeholder="Ваше E-mail">
-                <button type="submit" class="btn form__btn" class="btn">Заказать консультацию</button>
-            </form>
+ 
+                <form method="POST" class="form consultation__form" id="form-consultation">
+                    <div class="form__inp-wrp">
+                        <input name="name" class="input-text form__input-text" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__inp-wrp">
+                        <input name="phone" class="input-text form__input-text" type="tel" placeholder="Ваше телефон">
+                    </div>
+                    <div class="form__inp-wrp">
+                        <input name="email" class="input-text form__input-text" type="email" placeholder="Ваше E-mail">
+                    </div>
+                    <button type="submit" class="btn form__btn" class="btn">Заказать консультацию</button>
+                </form>
+            
         </div>
     </section>
     <section class="banner-gallery">
@@ -998,10 +1006,10 @@
                     и мы перезвоним вам в течении 10 минут
                 </div>
                 <button data-close class="modal__close">&times;</button>
-                <form action="#" method="POST" class="form form_width-100">
-                    <input name="name" class="input-text form__input-text" required type="text" placeholder="Ваше имя">
-                    <input name="phone" class="input-text form__input-text" required type="te" placeholder="Ваше телефон">
-                    <input name="email" class="input-text form__input-text" required type="email" placeholder="Ваше E-mail">
+                <form method="POST" class="form form_width-100" id="form-consultation-popap">
+                    <input name="name" class="input-text form__input-text" type="text" placeholder="Ваше имя">
+                    <input name="phone" class="input-text form__input-text" type="tel" placeholder="Ваше телефон">
+                    <input name="email" class="input-text form__input-text" type="email" placeholder="Ваше E-mail">
                     <button type="submit" class="btn form__btn" class="btn">Заказать консультацию</button>
                 </form>
             </div>
@@ -1014,10 +1022,10 @@
                     Пульсометр Polar FT1
                 </div>
                 <button data-close class="modal__close">&times;</button>
-                <form action="#" method="POST" class="form form_width-100">
-                    <input name="name" class="input-text form__input-text" required type="text" placeholder="Ваше имя">
-                    <input name="phone" class="input-text form__input-text" required type="te" placeholder="Ваше телефон">
-                    <input name="email" class="input-text form__input-text" required type="email" placeholder="Ваше E-mail">
+                <form method="POST" class="form form_width-100" id="form-buy">
+                    <input name="name" class="input-text form__input-text" type="text" placeholder="Ваше имя">
+                    <input name="phone" class="input-text form__input-text" type="tel" placeholder="Ваше телефон">
+                    <input name="email" class="input-text form__input-text" type="email" placeholder="Ваше E-mail">
                     <button type="submit" class="btn form__btn" class="btn">Купить</button>
                 </form>
             </div>
@@ -1035,6 +1043,8 @@
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>

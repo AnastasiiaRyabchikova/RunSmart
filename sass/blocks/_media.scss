@@ -37,9 +37,27 @@
         padding: 40px 0;
 
         &__title {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
+        }
+        &__descr {
+            margin-bottom: 20px;
         }
         
+    }
+
+    .form {
+        label.error {
+            position: static;
+            width: 100%;
+            background: transparent;
+            padding: 5px;
+            margin-bottom: 15px;
+            color: #fff;
+            display: block;
+            &::before {
+                content: none;
+            }
+        }
     }
 
     .tab-titles {
