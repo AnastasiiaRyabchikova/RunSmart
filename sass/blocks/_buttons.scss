@@ -14,3 +14,14 @@
         margin-bottom: 20px;
     }
 }
+
+.btn-up {
+    display: none;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: $main-color url('../icons/arrow-up.svg') center / 40px 40px  no-repeat;
+}

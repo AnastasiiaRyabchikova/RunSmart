@@ -80,5 +80,34 @@ $(document).ready(function () {
 
     $('[name="phone"]').mask("+7(999)99-99-999");
 
+    $('form').submit(function(e){
+      var form = this;
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(form).serialize()
+      }).done(function(){
+        $(form).find("input").val("");
+        $(form).closest('.modal').fadeOut();
+        $("#gratitude").fadeIn();
+        $('form').trigger('reset');
+        
+      });
+      return false;
+    });
+
+    $(window).on('scroll', function(){
+      if( $(window).scrollTop() > 100 ){
+        $(".btn-up").fadeIn();
+      } else {
+        $(".btn-up").fadeOut();
+      }
+    });
+
+     $(".btn-up").on("click", function(){
+      $('body,html').animate({scrollTop:0},800);
+     });
+
     
 });
